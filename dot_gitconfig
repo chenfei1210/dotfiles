@@ -1,0 +1,22 @@
+[user]
+	name = ChenFei
+	email = git100694034@gmail.com
+[core]
+	quotepath = false
+	excludesfile = /Users/chenfei/.gitignore_global
+	preloadindex = true
+	fscache = true
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[alias]
+	lg = log --oneline --graph --decorate --all

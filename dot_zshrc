@@ -1,0 +1,14 @@
+# ZSH plugin
+## plugin dir
+ZSH_PLUGIN_DIR="$HOME/.zsh/plugins"
+## autosuggestions
+source "$ZSH_PLUGIN_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh"
+## history substring search
+source "$ZSH_PLUGIN_DIR/zsh-history-substring-search/zsh-history-substring-search.zsh"
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+## syntax highlighting
+source "$ZSH_PLUGIN_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+# starship
+eval "$(starship init zsh)"

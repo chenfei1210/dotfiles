@@ -1,0 +1,41 @@
+### --- 操作系统相关 --- ###
+**/.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon?
+._*
+Thumbs.db
+desktop.ini
+
+### --- 编辑器 & IDE 相关 --- ###
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### --- 编译 & 临时文件 --- ###
+*.log
+*.tmp
+*.bak
+.cache/
+.eslintcache
+node_modules/
+dist/
+build/
+
+### --- 压缩包 --- ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+
