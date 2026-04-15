@@ -1,2 +1,20 @@
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# mise
+export MISE_DATA_DIR="$HOME/Development/mise"
+export MISE_CACHE_DIR="$MISE_DATA_DIR/cache"
+export MISE_CONFIG_DIR="$MISE_DATA_DIR/config"
+export MISE_STATE_DIR="$MISE_DATA_DIR/state"
+
+# Android
+export ANDROID_HOME="$HOME/Development/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin"
+
+# Android Studio bundled JBR
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :

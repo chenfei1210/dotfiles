@@ -1,0 +1,6 @@
+gui:
+  language: 'zh-CN'
+git:
+  pagers:
+    - colorArg: always
+      pager: delta

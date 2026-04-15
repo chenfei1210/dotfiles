@@ -12,3 +12,9 @@ source "$ZSH_PLUGIN_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # starship
 eval "$(starship init zsh)"
+
+# mise
+eval "$(mise activate zsh)"
+
+# alias
+alias dotfiles='chezmoi'

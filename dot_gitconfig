@@ -1,22 +1,42 @@
 [user]
 	name = ChenFei
 	email = git100694034@gmail.com
+
 [core]
 	quotepath = false
 	excludesfile = /Users/chenfei/.gitignore_global
 	preloadindex = true
 	fscache = true
+	pager = delta
+
 [init]
 	defaultBranch = main
+
 [color]
 	ui = auto
+
 [diff]
 	tool = vimdiff
+
 [merge]
 	tool = vimdiff
+
 [credential]
 	helper = osxkeychain
+
 [push]
 	default = simple
+
 [alias]
 	lg = log --oneline --graph --decorate --all
+
+[delta]
+	paging = never
+	true-color = auto
+	dark = true
+	side-by-side = true
+	line-numbers = true
+	syntax-theme = Dracula
+	width = variable
+	navigate = true
+	file-style = bold yellow ul
