@@ -90,8 +90,6 @@
     "remote.SSH.defaultExtensions": [
         "LiChenxi.sysmonitor"
     ],
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "chatgpt.localeOverride": "zh-CN",
     "dart.flutterCreatePlatforms": [
         "android",
