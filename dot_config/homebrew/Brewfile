@@ -1,0 +1,45 @@
+# Simple, modern, secure file encryption
+brew "age"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Zsh port of Fish shell's history search
+brew "zsh-history-substring-search"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+cask "font-maple-mono-normal-nf"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Web browser
+cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
+cask "mac-mouse-fix"
+# Smooths scrolling and set mouse scroll directions independently
+cask "mos"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
+# System monitor for the menu bar
+cask "stats"
+# Open-source code editor
+cask "visual-studio-code"
+# Multiplayer code editor
+cask "zed"
