@@ -20,6 +20,7 @@
         "editor.lineHighlightBackground": "#1073cf2d", // 光标所在行高亮内容的背景颜色
         "editor.lineHighlightBorder": "#9fced11f" // 光标所在行四周边框的背景颜色
     },
+    "workbench.experimental.modernUI": false, // 关闭现代界面(Modern UI)
     /// 保存行为
     "files.autoSave": "afterDelay", // 自动保存(间隔1000ms)
     "editor.codeActionsOnSave": { // 代码保存时
@@ -76,7 +77,12 @@
     "dart.closingLabels": false, // 不显示针对构造函数的注释, 方法调用和跨越多行的列表
     "dart.debugExternalPackageLibraries": true, // 调试外部依赖包代码
     "dart.debugSdkLibraries": true, // 调试 Dart SDK 内部代码
-    "[markdown]": { // Markdown 设置
+    "dart.flutterCreatePlatforms": [
+        "android",
+        "ios"
+    ],
+    /// Markdown 设置
+    "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint" // 设置默认格式化器
     },
     /// copilot
@@ -90,9 +96,6 @@
     "remote.SSH.defaultExtensions": [
         "LiChenxi.sysmonitor"
     ],
-    "chatgpt.localeOverride": "zh-CN",
-    "dart.flutterCreatePlatforms": [
-        "android",
-        "ios"
-    ]
+    /// chatgpt
+    "chatgpt.localeOverride": "zh-CN"
 }
