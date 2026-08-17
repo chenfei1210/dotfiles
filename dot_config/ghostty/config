@@ -1,0 +1,11 @@
+# === 字体 ===
+## 主字体
+font-family = Maple Mono Normal NF
+## 回退字体
+font-family = "PingFang SC"
+## 字体大小
+font-size = 13
+
+# === 窗口 ===
+background-opacity = 0.9
+background-blur-radius = 20
