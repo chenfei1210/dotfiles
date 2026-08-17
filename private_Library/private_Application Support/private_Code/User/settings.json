@@ -67,6 +67,7 @@
     },
     "editor.stickyScroll.enabled": false, // 关闭粘性滚动
     "accessibility.signalOptions.volume": 0, // 关闭声音提醒
+    "markdown.extension.toc.updateOnSave": false, // 关闭markdown自动生成目录
     /// Git
     "git.confirmSync": false, // 同步 Git 存储库时不要求确认
     /// 终端
