@@ -16,5 +16,8 @@ eval "$(starship init zsh)"
 # mise
 eval "$(mise activate zsh)"
 
-# alias
-alias dotfiles='chezmoi'
+chezmoi_git_push() {
+    chezmoi git -- add .
+    chezmoi git -- commit -m "update dotfiles"
+    chezmoi git -- push origin main
+}
