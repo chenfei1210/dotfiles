@@ -98,5 +98,9 @@
         "LiChenxi.sysmonitor"
     ],
     /// chatgpt
-    "chatgpt.localeOverride": "zh-CN"
+    "chatgpt.localeOverride": "zh-CN",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.md": "default"
+    }
 }
