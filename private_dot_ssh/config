@@ -5,13 +5,11 @@
 # This won't be added again if you remove it.
 Include ~/.orbstack/ssh/config
 
-Host github.com
-    HostName github.com
-    User git
+  Host ubuntu-24-cli
+    HostName 192.168.10.33
+    User chenfei
+    Port 22
     IdentityFile ~/.ssh/id_ed25519
-    IdentitiesOnly yes
-    AddKeysToAgent yes
-    UseKeychain yes
 
 Host fnOS-NAS
     HostName 192.168.10.10
@@ -24,3 +22,11 @@ Host fnOS-sub
     User ChenFei
     Port 22
     IdentityFile ~/.ssh/id_ed25519
+
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+    AddKeysToAgent yes
+    UseKeychain yes
