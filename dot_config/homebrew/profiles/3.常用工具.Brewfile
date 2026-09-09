@@ -15,7 +15,6 @@ brew "zsh-syntax-highlighting"
 # Terminal Development
 # ------------------------------------------------------------------------------
 
-brew "gh"
 brew "lazygit"
 
 # ------------------------------------------------------------------------------
@@ -25,8 +24,6 @@ brew "lazygit"
 brew "fastfetch"
 brew "fd"
 brew "fzf"
-brew "jq"
-brew "ripgrep"
 brew "tree"
 brew "wget"
 brew "htop"
@@ -49,7 +46,6 @@ cask "ghostty"
 # macOS Utilities
 # ------------------------------------------------------------------------------
 
-cask "stats"
 cask "mos"
 cask "mac-mouse-fix"
 cask "obsidian"
