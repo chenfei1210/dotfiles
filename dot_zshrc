@@ -20,6 +20,7 @@ eval "$(starship init zsh)"
 source <(fzf --zsh)
 
 chezmoi_git_push() {
+    chezmoi re-add
     chezmoi git -- add .
     chezmoi git -- commit -m "update dotfiles"
     chezmoi git -- push origin main
