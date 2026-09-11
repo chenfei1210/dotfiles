@@ -28,6 +28,7 @@ brew "tree"
 brew "wget"
 brew "htop"
 brew "lsd"
+brew "zoxide"
 
 # ------------------------------------------------------------------------------
 # Containers
