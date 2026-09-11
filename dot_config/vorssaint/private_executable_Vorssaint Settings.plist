@@ -963,7 +963,7 @@ action.scratchpad</string>
 		<key>snippetLibraryEnabled</key>
 		<true/>
 		<key>snippetLibraryShortcut</key>
-		<string>option+command:9</string>
+		<string>control+option+command:9</string>
 		<key>soundOutputSwitcherEnabled</key>
 		<false/>
 		<key>soundOutputSwitcherShortcut</key>

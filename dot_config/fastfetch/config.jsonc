@@ -1,0 +1,184 @@
+// By jan-rex
+// Modified from: https://github.com/fastfetch-cli/fastfetch/discussions/1269
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "padding": {
+      "top": 2
+    }
+  },
+  "display": {
+    "separator": "",
+    "key": {
+      "type": "string"
+    },
+    "bar": {
+      "border": {
+        "left": "\uee00",
+        "leftElapsed": "\uee03",
+        "right": "\uee02",
+        "rightElapsed": "\uee05"
+      },
+      "char": {
+        "total": "\uee01",
+        "elapsed": "\uee04"
+      },
+      "color": {
+        "total": null,
+        "elapsed": null
+      }
+    },
+    "percent": {
+      "type": [
+        "bar",
+        "bar-monochrome"
+      ]
+    },
+    "constants": [
+      // CONSTANT {$1} - COLOR BACKGROUND FOR KEY
+      "\u001b[48;2;43;43;69m",
+      // CONSTANT {$2} - COLOR BACKGROUND FOR OUTPUT
+      "\u001b[48;2;56;59;78m",
+      // CONSTANT {$3} - VERTICAL BARS AT START AND 75th CHARACTERS FORWARD AND BACKWARD
+      "\u001b[90m│                                                            │\u001b[60D\u001b[39m"
+    ]
+  },
+  "modules": [
+    // CUSTOM - Top UI bar
+    {
+      "type": "custom",
+      "key": "{#90}{$1}╭───────────────╮",
+      "format": "{#90}{$2}╭────────────────────────────────────────────────────────────╮"
+    },
+    {
+      "type": "title",
+      "key": "{#90}{$1}│ {#92}{icon} User        {#90}│",
+      "format": "{$2}{$3}{user-name}  {#2}[{home-dir}]"
+    },
+    {
+      "type": "users",
+      "key": "{#90}{$1}│ {#92}{icon} Users       {#90}│",
+      "myselfOnly": true,
+      "format": "{$2}{$3}{1}@{host-name}{/host-name}localhost{/}{?client-ip}  {#2}[IP:{client-ip}]{?}  {#2}[Login time: {login-time}]"
+    },
+    {
+      "type": "datetime",
+      "key": "{#90}{$1}│ {#92}{icon} Datetime    {#90}│",
+      "format": "{$2}{$3}{year}-{month-pretty}-{day-pretty}T{hour-pretty}:{minute-pretty}:{second-pretty}{offset-from-utc}  {#2}[{weekday-short}]"
+    },
+    {
+      "type": "title",
+      "key": "{#90}{$1}│ {#93}{icon} Host        {#90}│",
+      "format": "{$2}{$3}{host-name}"
+    },
+    {
+      "type": "host",
+      "key": "{#90}{$1}│ {#93}{icon} Machine     {#90}│",
+      "format": "{$2}{$3}{name}  {#2}{version}"
+    },
+    {
+      "type": "os",
+      "key": "{#90}{$1}│ {#93}{icon} OS          {#90}│",
+      "format": "{$2}{$3}{?pretty-name}{pretty-name}{?}{/pretty-name}{name}{/} {codename}  {#2}[v{version}] [{arch}]"
+    },
+    {
+      "type": "kernel",
+      "key": "{#90}{$1}│ {#93}{icon} Kernel      {#90}│",
+      "format": "{$2}{$3}{sysname}  {#2}[v{release}]"
+    },
+    {
+      "type": "uptime",
+      "key": "{#90}{$1}│ {#93}{icon} Uptime      {#90}│",
+      "format": "{$2}{$3}{?days}{days} Days + {?}{hours}:{minutes}:{seconds}"
+    },
+    {
+      "type": "cpu",
+      "key": "{#90}{$1}│ {#91}{icon} CPU         {#90}│",
+      "showPeCoreCount": true,
+      "temp": true,
+      "format": "{$2}{$3}{name}  {#2}[C:{core-types}] [{freq-max}]"
+    },
+    {
+      "type": "gpu",
+      "key": "{#90}{$1}│ {#91}{icon} GPU         {#90}│",
+      "detectionMethod": "auto",
+      "driverSpecific": true,
+      "format": "{$2}{$3}{name}  {#2}[C:{core-count}]{?frequency} [{frequency}]{?} [{type}]"
+    },
+    {
+      "type": "memory",
+      "key": "{#90}{$1}│ {#91}{icon} RAM         {#90}│",
+      "format": "{$2}{$3}{used} / {total}  {#2}{percentage-bar}{$2}"
+    },
+    {
+      "type": "swap",
+      "key": "{#90}{$1}│ {#91}{icon} SWAP        {#90}│",
+      "keyColor": "green",
+      "format": "{$2}{$3}{used} / {total}  {#2}{percentage-bar}{$2}"
+    },
+    {
+      "type": "disk",
+      "key": "{#90}{$1}│ {#91}{icon} Disk        {#90}│",
+      "format": "{$2}{$3}[{name}] {size-used} / {size-total}  {#2}{size-percentage-bar}{$2}",
+      "folders": "/"
+    },
+    {
+      "type": "poweradapter",
+      "key": "{#90}{$1}│ {#91}{icon} Power       {#90}│",
+      "format": "{$2}{$3}{name}"
+    },
+    {
+      "type": "terminal",
+      "key": "{#90}{$1}│ {#95}{icon} Terminal    {#90}│",
+      "format": "{$2}{$3}{pretty-name}  {#2}[{version}] [PID:{pid}]"
+    },
+    {
+      "type": "terminalfont",
+      "key": "{#90}{$1}│ {#95}{icon} Font        {#90}│",
+      "format": "{$2}{$3}{name}  {#2}[size: {size}]"
+    },
+    {
+      "type": "shell",
+      "key": "{#90}{$1}│ {#95}{icon} Shell       {#90}│",
+      "format": "{$2}{$3}{pretty-name}  {#2}[v{version}] [PID:{pid}]"
+    },
+    {
+      // localip IPv4
+      "type": "localip",
+      "key": "{#90}{$1}│ {#94}{icon} Local IPv4  {#90}│",
+      "showPrefixLen": true,
+      "showIpv4": true,
+      "showIpv6": false,
+      "showMtu": true,
+      "format": "{$2}{$3}{ifname}: {ipv4}  {#2}[MTU:{mtu}]"
+    },
+    {
+      // localip IPv6
+      "type": "localip",
+      "key": "{#90}{$1}│ {#94}{icon} Local IPv6  {#90}│",
+      "showPrefixLen": true,
+      "showIpv4": false,
+      "showIpv6": true,
+      "showMtu": true,
+      "format": "{$2}{$3}{ifname}: {ipv6}  {#2}[MTU:{mtu}]"
+    },
+    {
+      "type": "publicip",
+      "key": "{#90}{$1}│ {#94}{icon} Public IPv4 {#90}│",
+      "ipv6": false,
+      "format": "{$2}{$3}{ip}  {#2}[{location}]"
+    },
+    {
+      "type": "publicip",
+      "key": "{#90}{$1}│ {#94}{icon} Public IPv6 {#90}│",
+      "ipv6": true,
+      "format": "{$2}{$3}{ip}  {#2}[{location}]"
+    },
+    // CUSTOM - Button UI bar
+    {
+      "type": "custom",
+      "key": "{#90}{$1}╰───────────────╯",
+      "format": "{#90}{$2}╰────────────────────────────────────────────────────────────╯"
+    }
+  ]
+}
