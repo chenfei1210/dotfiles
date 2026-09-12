@@ -19,8 +19,11 @@ eval "$(starship init zsh)"
 # fzf
 source <(fzf --zsh)
 
+# # fastfetch
 # fastfetch
-fastfetch
+
+# zoxide
+eval "$(zoxide init zsh)"
 
 chezmoi_git_push() {
     chezmoi re-add
