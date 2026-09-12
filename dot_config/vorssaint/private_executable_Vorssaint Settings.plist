@@ -25,6 +25,7 @@
 		<key>autoQuitExceptions</key>
 		<array>
 			<string>com.apple.finder</string>
+			<string>com.caldis.Mos</string>
 		</array>
 		<key>batteryLimitPercent</key>
 		<integer>10</integer>
@@ -95,7 +96,7 @@
 		<key>commandBarAliases</key>
 		<string></string>
 		<key>commandBarCompactMode</key>
-		<true/>
+		<false/>
 		<key>commandBarDisabledSources</key>
 		<string></string>
 		<key>commandBarFileIgnores</key>
@@ -142,13 +143,13 @@ action.scratchpad</string>
 		<key>fanControlCurves</key>
 		<string>[{"points":[{"coolingLevel":0,"temperature":50},{"coolingLevel":100,"temperature":70}],"sensor":"hottestSoC"}]</string>
 		<key>fanControlMode</key>
-		<string>curve</string>
+		<string>system</string>
 		<key>featureAvailable.appUpdates</key>
 		<false/>
 		<key>featureAvailable.autoQuit</key>
 		<true/>
 		<key>featureAvailable.bluetoothSleep</key>
-		<true/>
+		<false/>
 		<key>featureAvailable.brightness</key>
 		<true/>
 		<key>featureAvailable.cameraPreview</key>
@@ -208,11 +209,11 @@ action.scratchpad</string>
 		<key>featureAvailable.monitorPower</key>
 		<true/>
 		<key>featureAvailable.mouseAcceleration</key>
-		<true/>
+		<false/>
 		<key>featureAvailable.mouseButtonShortcuts</key>
 		<false/>
 		<key>featureAvailable.mouseClickDebounce</key>
-		<true/>
+		<false/>
 		<key>featureAvailable.mouseNavigation</key>
 		<false/>
 		<key>featureAvailable.musicBlock</key>
@@ -224,7 +225,7 @@ action.scratchpad</string>
 		<key>featureAvailable.quickToggles</key>
 		<false/>
 		<key>featureAvailable.quitWindowProtection</key>
-		<true/>
+		<false/>
 		<key>featureAvailable.radialMenu</key>
 		<false/>
 		<key>featureAvailable.scratchpad</key>
