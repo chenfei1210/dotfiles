@@ -19,13 +19,12 @@
 		<key>appUpdatesNotify</key>
 		<true/>
 		<key>autoCheckUpdates</key>
-		<true/>
+		<false/>
 		<key>autoQuitEnabled</key>
-		<true/>
+		<false/>
 		<key>autoQuitExceptions</key>
 		<array>
 			<string>com.apple.finder</string>
-			<string>com.caldis.Mos</string>
 		</array>
 		<key>batteryLimitPercent</key>
 		<integer>10</integer>
@@ -103,6 +102,13 @@
 		<string></string>
 		<key>commandBarHidden</key>
 		<string></string>
+		<key>commandBarLinks</key>
+		<data>
+		W3siZGVzdGluYXRpb24iOiJodHRwczpcL1wvd3d3Lmdvb2dsZS5jb21cL3Nl
+		YXJjaD9xPXtxdWVyeX0iLCJraW5kIjoibGluayIsIm5hbWUiOiJHb29nbGXm
+		kJzntKIiLCJydW5zV2l0aG91dEFyZ3VtZW50IjpmYWxzZSwiaWQiOiIzRkM1
+		MEMzMy0zMEIzLTRGMUYtQjk0RS1GRjRENzU4RTg1MjkifV0=
+		</data>
 		<key>commandBarPins</key>
 		<string>action.quickLauncher
 action.scratchpad</string>
@@ -147,7 +153,7 @@ action.scratchpad</string>
 		<key>featureAvailable.appUpdates</key>
 		<false/>
 		<key>featureAvailable.autoQuit</key>
-		<true/>
+		<false/>
 		<key>featureAvailable.bluetoothSleep</key>
 		<false/>
 		<key>featureAvailable.brightness</key>
