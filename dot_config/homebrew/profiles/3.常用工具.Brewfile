@@ -56,6 +56,8 @@ cask "advanced-renamer"
 cask "vorssaint"
 cask "wechat"
 cask "atoll"
+cask "clipy"
+cask "db-browser-for-sqlite"
 
 brew "mas"
 mas "Microsoft Excel", id: 462058435
