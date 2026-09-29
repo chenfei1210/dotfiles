@@ -5,7 +5,13 @@
 # This won't be added again if you remove it.
 Include ~/.orbstack/ssh/config
 
-  Host ubuntu-24-cli
+Host macmini-utm-ubuntu-26-cli
+    HostName 192.168.10.22
+    User chenfei
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+
+Host ubuntu-24-cli
     HostName 192.168.10.33
     User chenfei
     Port 22

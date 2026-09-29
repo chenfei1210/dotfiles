@@ -55,9 +55,7 @@ cask "iina"
 cask "advanced-renamer"
 cask "vorssaint"
 cask "wechat"
-cask "atoll"
 cask "clipy"
-cask "db-browser-for-sqlite"
 
 brew "mas"
 mas "Microsoft Excel", id: 462058435
@@ -66,3 +64,5 @@ mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
 mas "The Unarchiver", id: 425424353
+mas "Windows App", id: 1295203466
+mas "Xcode", id: 497799835

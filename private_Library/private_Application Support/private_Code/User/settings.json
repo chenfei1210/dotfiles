@@ -113,5 +113,6 @@
         "https://schemastore.azurewebsites.net/": true,
         "https://www.schemastore.org/": true
     },
-    "sqlite3-editor.ui.tableSelector.displayColumns": false
+    "sqlite3-editor.ui.tableSelector.displayColumns": false,
+    "chat.viewSessions.orientation": "stacked"
 }
