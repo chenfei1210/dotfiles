@@ -20,6 +20,8 @@
 		<true/>
 		<key>appUpdatesRules</key>
 		<string>[]</string>
+		<key>appVolumesArePositions</key>
+		<true/>
 		<key>audioPriorityDeviceNames</key>
 		<dict/>
 		<key>audioPriorityInputEnabled</key>
@@ -87,6 +89,8 @@
 		<false/>
 		<key>clipboardHistoryEnabled</key>
 		<false/>
+		<key>clipboardHistoryFilterSensitiveText</key>
+		<false/>
 		<key>clipboardHistoryIgnoredApps</key>
 		<array/>
 		<key>clipboardHistoryIncludeImagesFiles</key>
@@ -101,11 +105,11 @@
 		<integer>20</integer>
 		<key>clipboardHistoryQuickPreview</key>
 		<false/>
+		<key>clipboardHistoryRetentionDays</key>
+		<integer>0</integer>
 		<key>clipboardHistoryShortcut</key>
 		<string>shift+command:9</string>
 		<key>clipboardHistoryShortcutEnabled</key>
-		<true/>
-		<key>clipboardHistorySkipSensitive</key>
 		<true/>
 		<key>colorPickerBareHex</key>
 		<false/>
@@ -439,7 +443,7 @@ action.scratchpad</string>
 		<key>killProcessSortBy</key>
 		<string>cpu</string>
 		<key>lastUpdateIntroVersion</key>
-		<string>3.4.1</string>
+		<string>3.4.2</string>
 		<key>launchAtLoginWanted</key>
 		<true/>
 		<key>linearScrollEnabled</key>
@@ -610,6 +614,8 @@ action.scratchpad</string>
 		<false/>
 		<key>mixerAppArrangement</key>
 		<string></string>
+		<key>mixerHeadphonesDisconnectSilenceAllowed</key>
+		<true/>
 		<key>mixerHeadphonesDisconnectVolumePercent</key>
 		<integer>25</integer>
 		<key>mixerHideInactiveApps</key>
@@ -688,6 +694,8 @@ action.scratchpad</string>
 		<true/>
 		<key>monitorPwrHealth</key>
 		<true/>
+		<key>monitorPwrPeripherals</key>
+		<false/>
 		<key>monitorPwrSystem</key>
 		<true/>
 		<key>monitorPwrTemperature</key>
@@ -794,6 +802,8 @@ action.scratchpad</string>
 		<true/>
 		<key>notchBrightness</key>
 		<true/>
+		<key>notchBrowserCovers</key>
+		<false/>
 		<key>notchCalendarCountdown</key>
 		<true/>
 		<key>notchCalendarEnabled</key>
@@ -818,6 +828,8 @@ action.scratchpad</string>
 		<true/>
 		<key>notchClipboard</key>
 		<true/>
+		<key>notchClipboardCardSize</key>
+		<string>comfortable</string>
 		<key>notchClipboardWindow</key>
 		<true/>
 		<key>notchCloseDelay</key>
@@ -852,12 +864,14 @@ action.scratchpad</string>
 		<string>commandBar,microphone,panel,recording,scratchpad,screenshot,speedTest,keyboardLight</string>
 		<key>notchHiddenModules</key>
 		<string>captures,clipboard,system</string>
+		<key>notchHiddenShowsActivity</key>
+		<false/>
 		<key>notchHideInCaptures</key>
 		<false/>
 		<key>notchHideInFullscreen</key>
 		<false/>
 		<key>notchHideMenuBarGap</key>
-		<true/>
+		<false/>
 		<key>notchHideTimerCountdown</key>
 		<false/>
 		<key>notchHideUntilHover</key>
@@ -874,6 +888,8 @@ action.scratchpad</string>
 		<string>music</string>
 		<key>notchIncludeOtherPlayers</key>
 		<false/>
+		<key>notchInputSource</key>
+		<true/>
 		<key>notchKeepAwakeActivity</key>
 		<false/>
 		<key>notchKeyboardLight</key>
@@ -950,9 +966,9 @@ action.scratchpad</string>
 		<true/>
 		<key>notchQuickAccessLayout</key>
 		<data>
-		eyJidXR0b25zIjpbeyJhY3Rpb25JRCI6ImV4cGxvcmUiLCJpZCI6IjAwMDAw
-		MDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMSIsImxhYmVsIjoiIiwi
-		c2lkZSI6ImxlZnQifV0sInZlcnNpb24iOjF9
+		eyJidXR0b25zIjpbeyJhY3Rpb25JRCI6ImV4cGxvcmUiLCJpZCI6IjAxNUQ2
+		OTdFLUNDM0EtNDc2OS1BREQzLUUxODUwMjhFRTU3RCIsImxhYmVsIjoiIiwi
+		c2lkZSI6InJpZ2h0In1dLCJ2ZXJzaW9uIjoxfQ==
 		</data>
 		<key>notchQuickPanel</key>
 		<true/>
@@ -964,6 +980,10 @@ action.scratchpad</string>
 		<true/>
 		<key>notchShelf</key>
 		<true/>
+		<key>notchShortcut</key>
+		<string>control+option+command:34</string>
+		<key>notchShortcutEnabled</key>
+		<false/>
 		<key>notchShowInCaptures</key>
 		<true/>
 		<key>notchShowPlayingMusic</key>
@@ -1331,6 +1351,8 @@ action.scratchpad</string>
 		<true/>
 		<key>screenshotShowLastRegion</key>
 		<true/>
+		<key>screenshotSpotlightDim</key>
+		<real>0.5</real>
 		<key>screenshotToolOrder</key>
 		<string>select,arrow,pixelate,crop,text,sticker,rect,highlight,freehand,line,ellipse,counter,redact</string>
 		<key>screenshotToolShortcuts</key>
@@ -1346,7 +1368,7 @@ action.scratchpad</string>
 		<key>screenshotWatermarkPresets</key>
 		<string>[]</string>
 		<key>screenshotWatermarkStyle</key>
-		<string>{"rotation":0,"opacity":0.4,"text":"","color":"white","kind":"none","anchor":"bottomTrailing","size":0.3}</string>
+		<string>{"kind":"none","rotation":0,"text":"","color":"white","opacity":0.4,"anchor":"bottomTrailing","size":0.3}</string>
 		<key>scrollHorizontalEnabled</key>
 		<false/>
 		<key>scrollHorizontalModifier</key>
@@ -1383,6 +1405,8 @@ action.scratchpad</string>
 		<true/>
 		<key>showCountdownInMenuBar</key>
 		<false/>
+		<key>showReleaseNotesBeforeUpdate</key>
+		<true/>
 		<key>smoothScrollCoast</key>
 		<integer>0</integer>
 		<key>smoothScrollEnabled</key>
@@ -1418,7 +1442,7 @@ action.scratchpad</string>
 		<key>superKeySource</key>
 		<string>capsLock</string>
 		<key>supportUpdateIntroVersion</key>
-		<string>3.4.1-support</string>
+		<string>3.4.2-support</string>
 		<key>switcherAppRules</key>
 		<dict/>
 		<key>switcherAppearanceDelay</key>
@@ -1433,6 +1457,8 @@ action.scratchpad</string>
 		<true/>
 		<key>switcherInstantSelection</key>
 		<false/>
+		<key>switcherMaxColumns</key>
+		<integer>0</integer>
 		<key>switcherMergeTabs</key>
 		<false/>
 		<key>switcherMinimizedPlacement</key>
@@ -1648,7 +1674,7 @@ action.scratchpad</string>
 		<array/>
 	</dict>
 	<key>vorssaintBackupAppVersion</key>
-	<string>3.4.1</string>
+	<string>3.4.2</string>
 	<key>vorssaintBackupVersion</key>
 	<integer>1</integer>
 </dict>

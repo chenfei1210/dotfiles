@@ -56,6 +56,8 @@ cask "advanced-renamer"
 cask "vorssaint"
 cask "wechat"
 cask "clipy"
+cask "qqmusic"
+cask "wetype"
 
 brew "mas"
 mas "Microsoft Excel", id: 462058435
