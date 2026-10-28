@@ -10,36 +10,52 @@ brew "git-delta"
 brew "chezmoi"
 
 ## 常用工具
+brew "mas"
 brew "starship"
 brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
-brew "gh"
 brew "lazygit"
 brew "fastfetch"
 brew "fd"
 brew "fzf"
-brew "jq"
-brew "ripgrep"
 brew "tree"
 brew "wget"
 brew "htop"
 brew "lsd"
+brew "zoxide"
 cask "orbstack"
 brew "lazydocker"
 cask "ghostty"
-cask "stats"
 cask "mos"
 cask "mac-mouse-fix"
 cask "obsidian"
+cask "utm"
+cask "iina"
+cask "advanced-renamer"
+cask "vorssaint"
+cask "wechat"
+cask "clipy"
+cask "qqmusic"
+cask "wetype"
+tap "detachhead/tap"
+cask "detachhead/tap/rebased", trusted: true
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "OneDrive", id: 823766827
+mas "The Unarchiver", id: 425424353
+mas "Windows App", id: 1295203466
+mas "CrystalFetch", id: 6454431289
 
 ## Flutter开发环境
 brew "mise"
 brew "cocoapods"
+brew "openjdk@17"
+cask "android-studio"
+mas "Xcode", id: 497799835
 
 ## AI开发环境
 brew "uv"
-brew "ruff"
-brew "python"
-brew "pipx"
-brew "sqlite"
+cask "pycharm"

@@ -67,4 +67,3 @@ mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
 mas "The Unarchiver", id: 425424353
 mas "Windows App", id: 1295203466
-mas "Xcode", id: 497799835
